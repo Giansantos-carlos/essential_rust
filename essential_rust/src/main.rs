@@ -1,37 +1,17 @@
-use rand::Rng;
-use std::io;
-use std::cmp::Ordering;
+
 fn main() {
 
-    println!("Escolhan um numero!");
+   // variables in rust
 
-    let secret_numeber: u32 = rand::rng().random_range(1..=100);
+   //variables immutables
 
-    println!("O numero secreto e:{}", secret_numeber);
+    let number =  10;
 
-    loop {
-        println!("Digite um numero:");
-        let mut guees: String = String::new();
+    println!("The number is {number}");
 
-        io::stdin()
-            .read_line(&mut guees)
-            .expect("Falha ao ler a linha");
+    let codernates: (f64, f64)  = (8.1, 8.2);
 
-        let guees: u32 = guees.trim().parse().expect("Digite um numero valido!");
-        println!("Voce escolheu: {}", guees);
-
-        match guees.cmp(&secret_numeber){
-            Ordering::Less => println!("E menor!!!"),
-            Ordering::Greater => println!("e maior!!!"),
-            Ordering::Equal => {
-                println!("Voce acertou !!");
-                break;
-            }
-
-        }
-
-    }
-
+    println!("{}", codernates.0)
 
 }
 
