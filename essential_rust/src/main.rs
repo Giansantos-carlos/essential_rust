@@ -9,4 +9,6 @@ fn main() {
     }
 }
 
+option_env!()
+
 
