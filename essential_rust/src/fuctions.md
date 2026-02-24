@@ -97,5 +97,3 @@ fn main() {
     println!("Exercise Failed if printing out this line!");
 }
 ```
-
-> You can find the solutions [here](https://github.com/sunface/rust-by-practice/blob/master/solutions/basic-types/functions.md)(under the solutions path), but only use it when you need it
